@@ -1,0 +1,30 @@
+[%# distribution_notification.tt2 ~%]
+Content-Type: multipart/report; report-type=delivery-status; 
+	boundary="[% boundary %]"
+Subject: [%"Your message has been distributed to list %1"|loc(list.name)|qencode%]
+X-Loop: [% conf.email %]@[% domain %]
+
+This is a MIME-encapsulated message.
+
+--[% boundary %]
+Content-Disposition: inline
+Content-Description: Notification
+
+[%|loc%]This is an automatic response sent by Sympa Mailing Lists Manager.[%END%]
+[% IF action == "delivered" -%]
+[%|loc%]Message was successfully delivered to following address:[%END%]
+
+	[% recipient %]
+
+[% ELSE -%]
+   Failed do deliver
+[% END -%]
+
+--[% boundary %]
+Content-Type: message/rfc822
+Content-Disposition: inline
+X-Sympa-Attach: yes
+
+[%# msg inserted here #%]
+
+--[% boundary %]--
