@@ -19,3 +19,10 @@ Add to your list config file:
     post_archive DistributionNotification
     
 ## Template ##
+
+## Patch ##
+
+If you use Sympa 6.2.48 or older it is recommended to apply the following
+patch:
+
+https://github.com/sympa-community/sympa/pull/807.diff
