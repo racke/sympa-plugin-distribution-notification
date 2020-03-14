@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-package Sympa::Plugin::Message::DistributionNotification;
+package Sympa::Message::Plugin::DistributionNotification;
 
 use strict;
 use warnings;

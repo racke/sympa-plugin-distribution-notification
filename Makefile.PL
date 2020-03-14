@@ -3,10 +3,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'Sympa::Plugin::Message::DistributionNotification',
+    NAME                => 'Sympa::Message::Plugin::DistributionNotification',
     AUTHOR              => q{Stefan Hornburg (Racke) <racke@linuxia.de>},
-    VERSION_FROM        => 'lib/Sympa/Plugin/Message/DistributionNotification.pm',
-    ABSTRACT_FROM       => 'lib/Sympa/Plugin/Message/DistributionNotification.pm',
+    VERSION_FROM        => 'lib/Sympa/Message/Plugin/DistributionNotification.pm',
+    ABSTRACT_FROM       => 'lib/Sympa/Message/Plugin/DistributionNotification.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
       ? ('LICENSE'=> 'perl')
       : ()),
@@ -23,6 +23,6 @@ WriteMakefile(
         },
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Sympa-Plugin-Message-DistributionNotification-*' },
+    clean               => { FILES => 'Sympa-Message-Plugin-DistributionNotification-*' },
     test                => { TESTS => join( ' ', (glob( 't/*.t'), glob('t/*/*.t')))},
 );
