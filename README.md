@@ -1,5 +1,13 @@
 # Distribution Notification Plugin for Sympa #
 
+This Sympa message plugin has the following use case:
+
+  * User sends post to mailing list
+  * User receives notification of pending moderation
+  * Message waits for moderation (can take a considerable amount of time)
+  * Editor releases post
+  * User receives distribution notifaction including the original post
+
 ## Installation ##
 
 Install module with:
