@@ -17,7 +17,7 @@ Content-Description: Notification
 	[% recipient %]
 
 [% ELSE -%]
-   Failed do deliver
+   Failed to deliver
 [% END -%]
 
 --[% boundary %]
