@@ -79,6 +79,16 @@ Sympa::Message::Plugin::DistributionNotification - Distribution notification for
 
 Version 0.100
 
+=head1 FUNCTIONS
+
+=head2 post_archive
+
+Message hook for distribution notification.
+
+=head1 SEE ALSO
+
+L<Message plugin documentation|https://sympa-community.github.io/gpldoc/man/Sympa-Message-Plugin.3.html>.
+
 =cut
 
 1;
