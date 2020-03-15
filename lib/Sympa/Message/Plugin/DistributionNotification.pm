@@ -73,7 +73,7 @@ sub post_archive {
 
 =head1 NAME
 
-Sympa::Plugin::Message::DistributionNotification - Distribution notification for moderated messages
+Sympa::Message::Plugin::DistributionNotification - Distribution notification for moderated messages
 
 =head1 VERSION
 
