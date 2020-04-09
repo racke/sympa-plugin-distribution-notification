@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/github/license/racke/sympa-plugin-distribution-notification.svg)](COPYING)
+
 # Distribution Notification Plugin for Sympa #
 
 This Sympa message plugin has the following use case:
