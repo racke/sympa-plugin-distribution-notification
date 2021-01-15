@@ -6,7 +6,7 @@ This Sympa message plugin has the following use case:
   * User receives notification of pending moderation
   * Message waits for moderation (can take a considerable amount of time)
   * Editor releases post
-  * User receives distribution notifaction including the original post
+  * User receives distribution notification including the original post
 
 ## Installation ##
 
